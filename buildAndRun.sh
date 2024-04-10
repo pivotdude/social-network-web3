@@ -1,0 +1,1 @@
+sudo ./build.local.sh && sudo ./runit.sh
