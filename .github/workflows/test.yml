@@ -31,4 +31,4 @@ jobs:
         with:
           context: ./apps/web
           push: true
-          tags: $DOCKER_USERNAME/$WEB_TITLE:latest
+          tags: "${DOCKER_USERNAME}/${WEB_TITLE}:latest"
