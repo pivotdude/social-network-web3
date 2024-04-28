@@ -5,8 +5,7 @@ on:
       - main
 env:
   DOCKER_USERNAME: pivotdude
-  BACKEND_TITLE: social-network-web3-frontend
-  WEB_TITLE: social-network-web3-backend
+  WEB_TITLE: social-network-web3-web
 
 jobs:
   test_build:
@@ -25,6 +24,7 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Build web
         id: docker_build
         uses: docker/build-push-action@v4

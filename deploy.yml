@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: pivotdude/social-network-web3-backend
   labels:
-    app.kubernetes.io/name: MyApp
+    pivotdude/social-network-web3-backend: latest
 spec:
   containers:
-    - name: nginx
-      image: nginx:stable
+    - name: social-network-web
+      image: pivotdude/social-network-web3-backend:latest
       ports:
         - containerPort: 80
           name: http
@@ -19,7 +19,7 @@ metadata:
   name: my-service
 spec:
   selector:
-    app.kubernetes.io/name: MyApp
+    pivotdude/social-network-web3-backend: latest
   ports:
     - name: http
       protocol: TCP
